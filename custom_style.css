@@ -1,0 +1,52 @@
+.box {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tile-2 {
+    background: #eee4da !important;
+}
+
+.tile-4 {
+    background: #ede0c8 !important;
+}
+
+.tile-8 {
+    background: #f2b179 !important;
+}
+
+.tile-16 {
+    background: #f59563 !important;
+}
+
+.tile-32 {
+    background: #f67c5f !important;
+}
+
+.tile-64 {
+    background: #f65e3b !important;
+}
+
+.tile-128 {
+    background: #edcf72 !important;
+}
+
+.tile-256 {
+    background: #edcc61 !important;
+}
+
+.tile-512 {
+    background: #edc850 !important;
+}
+
+.tile-1024 {
+    background: #edc53f !important;
+}
+
+.tile-2048 {
+    background: #edc22e !important;
+}
+
+.tile-super {
+    background: #3c3a32 !important;
+}

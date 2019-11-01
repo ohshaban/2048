@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Play 2048!</title>
+
+        <link rel="stylesheet" type="text/css" href="custom_style.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css" /> -->
+    </head>
+    <body>
+        <div id="root" class="has-background-light">
+            <section class="section">
+                <div class="container">
+                    <div class="level">
+                        <div class="level-item has-text-centered">
+                            <p class="title is-1">2048</p>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <label class="label">Score:</label>
+                                <p id="score">0</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <button id="newGameBtn" class="button has-background-grey has-text-light">New Game</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="level">
+                        <div class="level-item has-text-centered">
+                            <!-- <span>1</span><input id="sizeSlider" type="range" min=1 max=10 value=4><span>10</span>
+                            <label class="label" id="sizeLabel">4</label> -->
+                            <p class="">Use the arrow keys to move tiles on the board. Like tiles will merge together to produce the next power of two.<br>The goal is to get to the 2048 tile before running out of space!</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div id="board">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content has-text-centered">
+                <h1 id="status" class="title is-1 has-text-light is-clipped"></h1>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+
+        <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="2048.js" type="module"></script>
+        <script src="engine/game.js" type="module"></script>
+    </body>
+</html>
